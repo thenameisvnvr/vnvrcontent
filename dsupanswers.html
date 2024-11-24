@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSUP answers</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: monospace;
+        background-color: #f8f9fa;
+        padding: 20px;
+      }
+    </style>
+    <!-- Include Prism.js and Prism.css -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-python.min.js"></script>
+  </head>
+  <body>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCjCnuERSUEGmrK989qeUc0UOQ6EWTloYA",
+        authDomain: "vnvrcontent.firebaseapp.com",
+        projectId: "vnvrcontent",
+        storageBucket: "vnvrcontent.firebasestorage.app",
+        messagingSenderId: "547621677436",
+        appId: "1:547621677436:web:9e9f4523c580064abe1cf9",
+        measurementId: "G-Q46FW0CLSC",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <header class="shadow-sm">
+      <center><h1 class="display-2 fw-bold font">VNVR</h1></center>
+    </header>
+
+    <h2>DSUP Answers</h2>
+    <div class="ans-container row">
+      <!-- 2-->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 2</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+from abc import ABC, abstractmethod
+print('vnvr')
+class Appliance(ABC):
+    def __init__(self, name):
+        self.name = name
+
+    @abstractmethod
+    def turn_on(self):
+        pass
+
+class WashingMachine(Appliance):
+    def turn_on(self):
+        print(f"Turning on {self.name}")
+class Refrigirator(Appliance):
+    def turn_on(self):
+        print(f"Turning on {self.name}")
+
+washing_machine = WashingMachine("Washing Machine", 110)
+washing_machine.turn_on()
+
+refrigerator = Refrigirator("Refrigerator", 220)
+refrigerator.turn_on()
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <!-- 3 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 3</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+n = int(input('Enter a number: '))
+def even_or_odd(n):
+    if n % 2 == 0:
+        return 'Even'
+    else:
+        return 'Odd'
+print(even_or_odd(n))
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!--  4 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 4</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+word = input('Enter a Word: ')
+letter = input('Enter a letter u want to search: ')
+def number_of_occurrences(letter,word):
+    count = 0
+    for i in word:
+        if i == letter:
+            count += 1
+    return count
+
+letter_count = number_of_occurrences(letter, word)
+
+print(f'The letter {letter} appears {letter_count} times in the {word}.')
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- 5 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 5</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class Calculator:
+def __init__(self,a,b):
+    self.a = a
+    self.b = b
+def add(self,a,b):
+    return self.a + self.b
+def subtract(self,a,b):
+    return self.a - self.b
+def multiply(self,a,b):
+    return self.a * self.b
+def divide(self,a,b):
+    if b == 0:
+        return 'Error: Division by zero is not allowed.'
+    else:
+        return self.a / self.b
+a = int(input('Enter a number'))
+b = int(input('Enter a number'))
+calculator = Calculator(a, b)
+print(calculator.add(a,b))
+print(calculator.subtract(a,b))
+print(calculator.multiply(a,b))
+print(calculator.divide())
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 6</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class Vehicle:
+def __init__(self, name,model):
+    self.name = name
+    self.model = model
+def start(self):
+    return 'It starts'
+class Car(Vehicle):
+def start(self):
+    return self.name,'is starting'
+
+ford = Car('Ford','Mustang')
+print(ford.start())
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 7</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class Person:
+def greet(self):
+    print("Hello")
+class Student(Person):
+def greet(self):
+    print("Hello, I am a student")
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 8</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+# 8a
+n = int(input('Enter number: '))
+even_squares = [i*i for i in range(n) if i%2==0]
+print(even_squares)
+#8b
+fruits  = ['mango','grapes','orange','rasberry','strawberry','guava']
+s_fruits =[f for f in fruits if 's' in f]
+print(s_fruits)
+                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 9 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 9</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class BankAccount():
+def __init__(self,name,account_number):
+    self.name = name
+    self.account_number = account_number
+def get_name(self):
+    return 'Bank Account'
+class SavingsAccount(BankAccount):
+def get_name(self):
+    return 'Savings Account'
+class BalanceAccount(BankAccount):
+def get_name(self):
+    return 'Balance Account'
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 10 -->
+    </div>
+  </body>
+</html>

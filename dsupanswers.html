@@ -80,7 +80,7 @@ print('vnvr')
 class Appliance(ABC):
     def __init__(self, name):
         self.name = name
-
+        
     @abstractmethod
     def turn_on(self):
         pass
@@ -92,11 +92,11 @@ class Refrigirator(Appliance):
     def turn_on(self):
         print(f"Turning on {self.name}")
 
-washing_machine = WashingMachine("Washing Machine", 110)
+washing_machine = WashingMachine("Sanyo", 110)
 washing_machine.turn_on()
 
-refrigerator = Refrigirator("Refrigerator", 220)
-refrigerator.turn_on()
+refrigerator = Refrigirator("Samsung", 220)
+refrigerator.turn_on()                    
                 </code>
               </pre>
             </div>
@@ -294,11 +294,181 @@ def get_name(self):
         </div>
       </div>
       <!-- 10 -->
+
+      <!-- 11 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 11</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class Employee:
+def __init__(self, name, age, salary):
+    self.name = name
+    self.age = age
+    self.salary = salary
+class FulltimeEmployee(Employee):
+def calculate_salary(self):
+    return self.salary
+full_time_employee = FulltimeEmployee('Krishna',23,50000)
+print(full_time_employee.calculate_salary())
+                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 12 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 12</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class Student:
+def __init__(self, name, subject1, subject2,subject3,subject4,subject5,subject6):
+    self.name = name
+    self.subject1 = subject1
+    self.subject2 = subject2
+    self.subject3 = subject3
+    self.subject4 = subject4
+    self.subject5 = subject5
+    self.subject6 = subject6
+def average_grade(self):
+    average = (self.subject1 + self.subject2 + self.subject3 + self.subject4 + self.subject5 + self.subject6) / 6
+    if average >90:
+        return 'S'
+    elif average >80:
+        return 'A'
+    elif average >70:
+        return 'B'
+    elif average >60:
+        return 'C'
+    elif average>50:
+        return 'D'
+    elif average>40:
+        return 'E'
+    else:
+        return 'F'
+
+student1 = Student('Shasanth', 90, 85, 95, 88, 92, 90)
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 13 -->
+
+      <!-- 14 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 14</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+word = input('Enter a word: ')
+letter = input('Enter a letter to search: ')
+count = word.count(letter)
+print(count)
+                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 15 -->
+      <!-- 16 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 16</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+#16a 
+#also similar to 8a
+n = int(input('Enter number: '))
+even_squares = [i*i for i in range(n) if i%2==0]
+print(even_squares)
+#16b
+cities = ['New York','Hyderabad','Vizag','Paris','Tokyo','ddkjfdkf']
+vowels= {'a','e','i','o','u'}
+vowel_cities = [city for city in cities if any(letter for letter in city if letter in vowels)]
+print(vowel_cities)
+                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 17 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 17</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+from abc import ABC,abstractmethod
+class Shape:
+    @abstractmethod
+    def area(self):
+        pass
+    @abstractmethod
+    def perimeter(self):
+        pass
+class Triangle(Shape):
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+    def area(self):
+        return 0.5 * self.base * self.height
+    def perimeter(self):
+        return self.base + self.base + self.height
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+    def area(self):
+        return 3.14 * self.radius ** 2
+    def perimeter(self):
+        return 2 * 3.14 * self.radius
+
+triangle =Triangle(5,10)
+print(f"Triangle area: {triangle.area()}")
+print(f"Triangle perimeter: {triangle.perimeter()}")
+
+circle = Circle(7)
+print(f"Circle area: {circle.area()}")
+print(f"Circle perimeter: {circle.perimeter()}")
+                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -->
+      <!-- 18 -->
+      <!-- 19 -->
+      <!-- 20 -->
     </div>
 
     <script>
       alert(
-        "All the programs here are given according to the questions submitted in the form"
+        "All the programs here are given according to the questions submitted in the form\n (program edaina wrong anipisthe lr or cr  cheppandi)"
       );
     </script>
   </body>

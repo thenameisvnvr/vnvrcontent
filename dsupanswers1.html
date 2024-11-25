@@ -335,6 +335,12 @@ class SavingsAccount(BankAccount):
 class BalanceAccount(BankAccount):
   def get_name(self):
     return 'Balance Account'
+account1 = BankAccount("SBI",52120245166)
+print(account1.get_name())
+account2 = SavingsAccount("BOI",36812349747)
+print(account2.get_name())
+account3 = BalanceAccount("HDFC",4736193648) 
+print(account3.get_name())                  
                 </code>
               </pre>
             </div>
@@ -510,6 +516,49 @@ print(f"Circle perimeter: {circle.perimeter()}")
 
       <!-- -->
       <!-- 18 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 18</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class Person:
+  def __init__(self,name,age,country):
+    self.name = name
+    self.age = age
+    self.country = country 
+  def getname(self):
+    return self.name
+  def getage(self):
+    return self.age
+  def getcountry(self):
+    return self.country
+  def setname(self,name):
+    self.name = name
+    
+  def setage(self, age):
+    self.age = age
+  def setcountry(self,country):
+    self.country = country
+p = Person("rohith",23,"Russia")
+print(p.getname())
+print(p.getage())
+print(p.getcountry())
+p.setname("Nikolai"))
+p.setage(56))
+p.setcountry("India"))
+print(p.getname())
+print(p.getage())
+print(p.getcountry())
+                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- 19 -->
       <!-- 20 -->
     </div>

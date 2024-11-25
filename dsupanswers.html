@@ -214,13 +214,13 @@ class Calculator:
 def __init__(self,a,b):
     self.a = a
     self.b = b
-def add(self,a,b):
+def add(self):
     return self.a + self.b
-def subtract(self,a,b):
+def subtract(self):
     return self.a - self.b
-def multiply(self,a,b):
+def multiply(self):
     return self.a * self.b
-def divide(self,a,b):
+def divide(self):
     if b == 0:
         return 'Error: Division by zero is not allowed.'
     else:
@@ -228,9 +228,9 @@ def divide(self,a,b):
 a = int(input('Enter a number'))
 b = int(input('Enter a number'))
 calculator = Calculator(a, b)
-print(calculator.add(a,b))
-print(calculator.subtract(a,b))
-print(calculator.multiply(a,b))
+print(calculator.add())
+print(calculator.subtract())
+print(calculator.multiply())
 print(calculator.divide())
                 </code>
               </pre>

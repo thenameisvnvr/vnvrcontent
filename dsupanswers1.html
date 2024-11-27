@@ -137,10 +137,10 @@ class Refrigirator(Appliance):
     def turn_on(self):
         print(f"Turning on {self.name}")
 
-washing_machine = WashingMachine("Sanyo", 110)
+washing_machine = WashingMachine("Sanyo")
 washing_machine.turn_on()
 
-refrigerator = Refrigirator("Samsung", 220)
+refrigerator = Refrigirator("Samsung")
 refrigerator.turn_on()                    
                 </code>
               </pre>
@@ -211,20 +211,21 @@ print(f'The letter {letter} appears {letter_count} times in the {word}.')
               <pre class="code-container fs-6 rounded rounded-4">
                 <code class="language-python">
 class Calculator:
-def __init__(self,a,b):
+  def __init__(self,a,b):
     self.a = a
     self.b = b
-def add(self):
+  def add(self):
     return self.a + self.b
-def subtract(self):
+  def subtract(self):
     return self.a - self.b
-def multiply(self):
+  def multiply(self):
     return self.a * self.b
-def divide(self):
+  def divide(self):
     if b == 0:
         return 'Error: Division by zero is not allowed.'
     else:
         return self.a / self.b
+        
 a = int(input('Enter a number'))
 b = int(input('Enter a number'))
 calculator = Calculator(a, b)
@@ -249,13 +250,13 @@ print(calculator.divide())
               <pre class="code-container fs-6 rounded rounded-4">
                 <code class="language-python">
 class Vehicle:
-def __init__(self, name,model):
+  def __init__(self, name,model):
     self.name = name
     self.model = model
-def start(self):
+  def start(self):
     return 'It starts'
 class Car(Vehicle):
-def start(self):
+  def start(self):
     return self.name,'is starting'
 
 ford = Car('Ford','Mustang')
@@ -276,11 +277,13 @@ print(ford.start())
               <pre class="code-container fs-6 rounded rounded-4">
                 <code class="language-python">
 class Person:
-def greet(self):
+  def greet(self):
     print("Hello")
 class Student(Person):
-def greet(self):
+  def greet(self):
     print("Hello, I am a student")
+s = Student()
+s.greet()
                 </code>
               </pre>
             </div>
@@ -321,17 +324,23 @@ print(s_fruits)
               <pre class="code-container fs-6 rounded rounded-4">
                 <code class="language-python">
 class BankAccount():
-def __init__(self,name,account_number):
+  def __init__(self,name,account_number):
     self.name = name
     self.account_number = account_number
-def get_name(self):
+  def get_name(self):
     return 'Bank Account'
 class SavingsAccount(BankAccount):
-def get_name(self):
+  def get_name(self):
     return 'Savings Account'
 class BalanceAccount(BankAccount):
-def get_name(self):
+  def get_name(self):
     return 'Balance Account'
+account1 = BankAccount("SBI",52120245166)
+print(account1.get_name())
+account2 = SavingsAccount("BOI",36812349747)
+print(account2.get_name())
+account3 = BalanceAccount("HDFC",4736193648) 
+print(account3.get_name())                  
                 </code>
               </pre>
             </div>
@@ -350,12 +359,12 @@ def get_name(self):
               <pre class="code-container fs-6 rounded rounded-4">
                 <code class="language-python">
 class Employee:
-def __init__(self, name, age, salary):
+  def __init__(self, name, age, salary):
     self.name = name
     self.age = age
     self.salary = salary
 class FulltimeEmployee(Employee):
-def calculate_salary(self):
+  def calculate_salary(self):
     return self.salary
 full_time_employee = FulltimeEmployee('Krishna',23,50000)
 print(full_time_employee.calculate_salary())
@@ -376,7 +385,7 @@ print(full_time_employee.calculate_salary())
               <pre class="code-container fs-6 rounded rounded-4">
                 <code class="language-python">
 class Student:
-def __init__(self, name, subject1, subject2,subject3,subject4,subject5,subject6):
+  def __init__(self, name, subject1, subject2,subject3,subject4,subject5,subject6):
     self.name = name
     self.subject1 = subject1
     self.subject2 = subject2
@@ -384,7 +393,7 @@ def __init__(self, name, subject1, subject2,subject3,subject4,subject5,subject6)
     self.subject4 = subject4
     self.subject5 = subject5
     self.subject6 = subject6
-def average_grade(self):
+  def average_grade(self):
     average = (self.subject1 + self.subject2 + self.subject3 + self.subject4 + self.subject5 + self.subject6) / 6
     if average >90:
         return 'S'
@@ -507,12 +516,57 @@ print(f"Circle perimeter: {circle.perimeter()}")
 
       <!-- -->
       <!-- 18 -->
+      <div class="q1 col-12 mb-3">
+        <div class="card">
+          <div class="card-body" style="padding: 0 !important">
+            <h5 class="card-title m-2">&Qopf;UESTION 18</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary mx-2">Code:</h6>
+            <div class="card-text m-1">
+              <pre class="code-container fs-6 rounded rounded-4">
+                <code class="language-python">
+class Person:
+  def __init__(self,name,age,country):
+    self.name = name
+    self.age = age
+    self.country = country 
+  def getname(self):
+    return self.name
+  def getage(self):
+    return self.age
+  def getcountry(self):
+    return self.country
+  def setname(self,name):
+    self.name = name
+    
+  def setage(self, age):
+    self.age = age
+  def setcountry(self,country):
+    self.country = country
+p = Person("rohith",23,"Russia")
+print(p.getname())
+print(p.getage())
+print(p.getcountry())
+p.setname("Nikolai"))
+p.setage(56))
+p.setcountry("India"))
+print(p.getname())
+print(p.getage())
+print(p.getcountry())
+                    
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- 19 -->
       <!-- 20 -->
     </div>
 
     <script>
-      window.location.href ='https://thenameisvnvr.github.io/vnvrcontent/dsupanswers1.html'
+      alert(
+        "All the programs here are given according to the questions submitted in the form\n (program edaina wrong anipisthe lr or cr  cheppandi)"
+      );
     </script>
   </body>
 </html>
